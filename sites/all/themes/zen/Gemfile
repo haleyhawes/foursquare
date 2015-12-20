@@ -1,0 +1,12 @@
+# A sample Gemfile
+source "https://rubygems.org"
+
+# gem "rails"
+
+
+gem "sass", '~> 3.3'                 # Sass version with source-maps https://github.com/Compass/compass/issues/1108
+gem 'compass', '~>1.0.0.alpha.19'    # Framework built on Sass.
+gem 'compass-rgbapng'                # Turns rgba() into .png's for backwards compatibility.
+gem 'singularitygs'                  # Alternative to the Susy grid framework.
+gem 'breakpoint'                     # Manages CSS media queries.
+gem 'compass-css-arrow'
