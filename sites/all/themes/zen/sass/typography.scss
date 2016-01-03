@@ -1,0 +1,62 @@
+@import url(https://fonts.googleapis.com/css?family=Judson:400,400italic,700);
+
+body {
+	font-family:$body-font;
+	font-size:16px;
+	line-height:1.4;
+}
+
+h1, h2, h3 {
+	font-family:$judson;
+	line-height:1.2;
+}
+
+h1, h2, h3, h4 {
+	color:$navy;
+}
+
+h1,
+%h1 {
+	font-size:34px;
+}
+
+h2,
+%h2 {
+	font-size:26px;
+}
+
+h3,
+%h3 {
+	font-size:22px;
+}
+
+.blue {
+	color:$blue;
+}
+
+.two-thirds {
+	width:70%;
+}
+
+.one-third {
+	width:30%;
+}
+
+.left {
+	float:left;
+	padding-right:$horiz-gutter;
+}
+
+.right {
+	float:right;
+	padding-left:$horiz-gutter;
+}
+
+.wys-callout {
+	p {
+		color:#777;
+		font-size:0.9em;
+		line-height:2.6;
+		font-style:italic;
+	}
+}

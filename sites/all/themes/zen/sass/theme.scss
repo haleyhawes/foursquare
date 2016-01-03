@@ -1,0 +1,64 @@
+@import "breakpoint";
+
+// Colors
+
+$blue:#0082c8;
+$navy:#0c5379;
+$gold:#d4b66e;
+$green:#566b48;
+
+$transparent-navy:rgba(12, 83, 121, 0.75);
+$transparent-blue:rgba(0, 130, 200, 0.75);
+$transparent-green:rgba(88, 110, 73, 0.75);
+$transparent-gold:rgba(212, 182, 110, 0.75);
+
+
+// Fonts
+
+$judson:"Judson", georgia, serif;
+$body-font:arial, helvetica, sans-serif;
+
+
+// Widths
+
+// Converts breakpoints to ems for better font scaling & accessibility.
+// Variable source: breakpoint 
+$breakpoint-to-ems: true; 
+
+// Set min and max width of the overall layout
+$layout-min: 320px;
+$max-layout:1000px;
+
+$nav-max: 880px;
+$nav-min: max-width 879px;
+$img-gallery-min:830px;
+$img-gallery-max:max-width 829px;
+
+// Standard dpi breakpoints
+$phone-max: max-width 479px;
+$phone-min: 480px;
+
+$tablet-small-max: max-width 599px;
+$tablet-small-min: 600px;
+
+$tablet-portrait-max: max-width 767px;
+$tablet-portrait-min: 768px;
+
+$desktop-max: max-width 959px;
+$desktop-min: 960px;
+
+// Miscellanous breakpoints
+$tablet-landscape-min: 1024px;
+$tablet-landscape-max: max-width 1023px;
+$desktop-medium-min: 1280px;
+$desktop-medium-max: 1279px;
+$widescreen-max: max-width 1439px;
+$widescreen-min: 1440px;
+$orientation-landscape: "only screen and (orientation: landscape)";
+$orientation-portrait: "only screen and (orientation: portrait)";
+
+
+// Spacing
+
+$horiz-gutter:24px;
+$vert-gutter:24px;

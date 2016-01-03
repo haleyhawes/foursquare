@@ -6,7 +6,10 @@
  * Complete documentation for this file is available online.
  * @see https://drupal.org/node/1728164
  */
+  $formatted_date = format_date($node->created, 'custom', 'F j, Y');
+
 ?>
+
 <article class="node-<?php print $node->nid; ?> <?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 
   <?php if ($title_prefix || $title_suffix || $display_submitted || $unpublished || !$page && $title): ?>
@@ -19,8 +22,7 @@
 
       <?php if ($display_submitted): ?>
         <p class="submitted">
-          <?php print $user_picture; ?>
-          <?php print $submitted; ?>
+          <?php print $formatted_date ?>
         </p>
       <?php endif; ?>
 
@@ -36,9 +38,5 @@
     hide($content['links']);
     print render($content);
   ?>
-
-  <?php print render($content['links']); ?>
-
-  <?php print render($content['comments']); ?>
 
 </article>

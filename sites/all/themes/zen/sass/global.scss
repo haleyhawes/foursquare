@@ -1,0 +1,33 @@
+html, body {
+	margin:0;
+	padding:0;
+}
+
+* {
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+}
+
+a {
+	text-decoration:none;
+	color:$gold;
+	&:hover {
+		color:darken($gold, 10%);
+	}
+}
+
+img {
+	max-width:100%;
+	height:auto;
+	&.left {
+		width:25%;
+		float:left;
+		margin-right:$horiz-gutter;
+		margin-bottom:$horiz-gutter/2;
+	}
+}
+
+.container {
+	@extend %container;
+}

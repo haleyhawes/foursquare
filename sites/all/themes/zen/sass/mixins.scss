@@ -1,0 +1,54 @@
+@mixin box-shadow($h-shadow, $v-shadow, $blur, $shadow-color) {
+	box-shadow: $h-shadow $v-shadow $blur $shadow-color;
+	-webkit-box-shadow: $h-shadow $v-shadow $blur $shadow-color;
+	-moz-box-shadow: $h-shadow $v-shadow $blur $shadow-color;
+}
+
+@mixin rotate($deg) {
+	-ms-transform:rotate($deg); /* IE 9 */
+	-moz-transform:rotate($deg);
+    -webkit-transform:rotate($deg); /* Chrome, Safari, Opera */
+   	transform:rotate($deg);
+}
+
+@mixin transition($property, $duration, $effect) {
+	transition:$property $duration $effect;
+	-webkit-transition:$property $duration $effect;
+	-moz-transition:$property $duration $effect;
+	-o-transition:$property $duration $effect;
+}
+
+@mixin clearfix {
+	&:after {
+		content:"";
+		display:block;
+		clear:both;
+	}
+}
+
+%container {
+	max-width:$max-layout;
+	margin-left:auto;
+	margin-right:auto;
+	padding-left:$horiz-gutter/2;
+	padding-right:$horiz-gutter/2;
+}
+
+@mixin linear-gradient($top, $bottom){
+    background: $top; /* Old browsers */
+    background: -moz-linear-gradient(top,  $top 0%, $bottom 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$top), color-stop(100%,$bottom)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  $top 0%,$bottom 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  $top 0%,$bottom 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  $top 0%,$bottom 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  $top 0%,$bottom 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+}
+
+@mixin flexbox {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+}

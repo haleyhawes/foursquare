@@ -11,7 +11,7 @@
 <!--[if lte IE 6]><html class="lt-ie9 lt-ie8 lt-ie7" <?php print $html_attributes; ?>><![endif]-->
 <!--[if (IE 7)&(!IEMobile)]><html class="lt-ie9 lt-ie8" <?php print $html_attributes; ?>><![endif]-->
 <!--[if IE 8]><html class="lt-ie9" <?php print $html_attributes; ?>><![endif]-->
-<!--[if (gte IE 9)|(gt IEMobile 7)]><!--><html <?php print $html_attributes . $rdf_namespaces; ?>><!--<![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)]><!--><html <?php print $html_attributes . $rdf_namespaces; ?> xmlns:og="http://opengraphprotocol.org/schema/"><!--<![endif]-->
 
 <head>
   <?php print $head; ?>
@@ -24,7 +24,9 @@
   <?php endif; ?>
   <!--[if IEMobile]><meta http-equiv="cleartype" content="on"><![endif]-->
 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <?php print $styles; ?>
+  <link rel="stylesheet" type="text/css" href="/sites/all/themes/zen/css/styles.css">
   <?php print $scripts; ?>
   <?php if ($add_html5_shim and !$add_respond_js): ?>
     <!--[if lt IE 9]>

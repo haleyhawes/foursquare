@@ -1,0 +1,153 @@
+#block-views-all-article-tags-block {
+	.view-content {
+		.views-row {
+			a {
+				font-weight:700;
+			}
+		}
+	}
+}
+
+#content {
+	#block-views-all-article-tags-block,
+	#block-views-calculators-block {
+		@include breakpoint($tablet-landscape-min) {
+			width:50%;
+			float:left;
+		}
+		.view-content {
+			@include clearfix;
+			.views-row {
+				@include breakpoint($phone-min) {
+					width:50%;
+					float:left;
+				}
+				padding:$horiz-gutter/6 0;
+				a {
+					font-weight:700;
+				}
+			}
+		}
+		.view-footer {
+			margin-top:$horiz-gutter;
+		}
+	}
+	@include breakpoint($tablet-landscape-min) {
+		#block-views-all-article-tags-block {
+			padding-right:$horiz-gutter;
+		}
+		#block-views-calculators-block {
+			padding-left:$horiz-gutter;
+		}
+	}
+}
+
+.sidebars {
+	#block-views-all-article-tags-block {
+		.view-footer {
+			display:none;
+		}
+	}
+}
+
+
+/* Articles */
+
+.node-article.node-teaser {
+	margin-bottom:$horiz-gutter;
+	.node__title {
+		margin-bottom:$horiz-gutter/6;
+	}
+	.submitted {
+		margin-top:0;
+		color:#777;
+		font-size:0.9em;
+		margin-bottom:$horiz-gutter/2;
+	}
+}
+
+.node-article.view-mode-full {
+	.submitted {
+		margin-top:-$horiz-gutter/2;
+		color:#777;
+		font-size:0.9em;
+		margin-bottom:$horiz-gutter;
+	}
+	.field-name-field-image {
+		@include breakpoint($tablet-small-min) {
+			width:25%;
+			float:left;
+			margin-right:$horiz-gutter/2;
+			margin-bottom:$horiz-gutter/2;
+		}
+	}
+}
+
+
+/* Calculators */
+
+.view-calculators.view-display-id-page_1 {
+	h2 {
+		margin-bottom:$horiz-gutter/2;
+	}
+	.views-row {
+		margin-bottom:$horiz-gutter;
+	}
+}
+
+
+/* Our Services */
+
+#block-views-services-block-1 {
+	margin-top:$vert-gutter;
+	img {
+		display:block;
+	}
+	.views-field-title {
+		a {
+			color:$navy;
+		}
+	}
+	@include breakpoint($tablet-small-min) {
+		.views-row {
+			@include flexbox;
+			.views-field-field-service-thumb {
+				width:33.33%;
+				float:left;
+				padding-right:$horiz-gutter/2;
+			}
+			.views-fieldset {
+				width:66.67%;
+				float:right;
+				padding-left:$horiz-gutter/2;
+				padding-bottom:$horiz-gutter;
+				padding-right:$horiz-gutter/2;
+			}
+			&:nth-child(odd) {
+				background-color:#f6f5f3;
+			}
+			&:nth-child(even) {
+				background-color:#fafaf9;
+			}
+		}
+	}
+	@include breakpoint($tablet-small-max) {
+		.views-row {
+			margin-bottom:$horiz-gutter/2;
+			background-color:#f6f5f3;
+		}
+		.views-field-field-service-thumb {
+			height:250px;
+			overflow:hidden;
+			img {
+				min-width:100%;
+			}
+		}
+		.views-fieldset {
+			padding:$horiz-gutter;
+			h2 {
+				margin-top:0;
+			}
+		}
+	}
+}

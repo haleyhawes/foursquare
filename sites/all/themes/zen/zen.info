@@ -5,7 +5,11 @@ screenshot  = zen-internals/screenshot.png
 core        = 7.x
 engine      = phptemplate
 
-stylesheets[all][] = system.menus.css
+; stylesheets[all][] = system.menus.css
+stylesheets[all][] = css/styles.css
+
+scripts[] = js/owl.carousel.min.js
+scripts[] = js/scripts.js
 
 regions[header]         = Header
 regions[navigation]     = Navigation bar
@@ -14,6 +18,7 @@ regions[help]           = Help
 regions[content]        = Content
 regions[sidebar_first]  = First sidebar
 regions[sidebar_second] = Second sidebar
+regions[content_bottom] = Content Bottom
 regions[footer]         = Footer
 regions[bottom]         = Page bottom
 regions[page_top]       = Page top
@@ -33,7 +38,7 @@ settings[zen_html5_respond_meta][] = meta
 settings[zen_rebuild_registry]     = 0
 settings[zen_wireframes]           = 0
 
-plugins[panels][layouts] = panels-layouts
+; plugins[panels][layouts] = panels-layouts
 
 ; Information added by Drupal.org packaging script on 2015-12-01
 version = "7.x-5.6"
