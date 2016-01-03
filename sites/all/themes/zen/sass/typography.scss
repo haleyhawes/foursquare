@@ -34,22 +34,32 @@ h3,
 	color:$blue;
 }
 
-.two-thirds {
-	width:70%;
+@include breakpoint($tablet-portrait-min) {
+	.two-thirds {
+		width:70%;
+	}
+
+	.one-third {
+		width:30%;
+	}
+
+	.left {
+		float:left;
+		padding-right:$horiz-gutter;
+	}
+
+	.right {
+		float:right;
+		padding-left:$horiz-gutter;
+	}
 }
 
-.one-third {
-	width:30%;
+img.left {
+	padding-right:0;
 }
 
-.left {
-	float:left;
-	padding-right:$horiz-gutter;
-}
-
-.right {
-	float:right;
-	padding-left:$horiz-gutter;
+img.right {
+	padding-left:0;
 }
 
 .wys-callout {
@@ -58,5 +68,15 @@ h3,
 		font-size:0.9em;
 		line-height:2.6;
 		font-style:italic;
+	}
+	@include breakpoint($tablet-portrait-max) {
+		background-color:#f6f5f3;
+		padding:$horiz-gutter;
+		p:first-child {
+			margin-top:0;
+		}
+		p:last-child {
+			margin-bottom:0;
+		}
 	}
 }

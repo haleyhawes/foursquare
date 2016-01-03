@@ -84,6 +84,7 @@
 		}
 	}
 	@include breakpoint($tablet-portrait-max) {
+		background-color:$navy;
 		.views-fieldset {
 			.views-fieldset {
 				.views-fieldset {
@@ -121,16 +122,6 @@
 						width:100%;
 						text-align:center;
 					}
-				}
-			}
-			&:nth-child(odd) {
-				.views-fieldset {
-					background-color:#f6f5f3;
-				}
-			}
-			&:nth-child(even) {
-				.views-fieldset {
-					background-color:#fafaf9;
 				}
 			}
 		}
@@ -200,13 +191,14 @@
 			@include clearfix;
 			.views-field-title {
 				margin-bottom:$horiz-gutter/2;
+				font-size:26px !important;
 				a {
 					color:$navy;
 				}
 			}
 		}
 	}
-	@include breakpoint($img-gallery-max $phone-min) {
+	@include breakpoint($img-gallery-max $tablet-small-min) {
 		.views-row {
 			@include flexbox;
 			.views-field-field-service-thumb {
@@ -219,14 +211,25 @@
 			}
 		}
 	}
-	@include breakpoint($phone-max) {
+	@include breakpoint($tablet-small-min) {
 		.views-row {
-			margin-bottom:$horiz-gutter/2;
-			&:nth-child(odd),
-			&:nth-child(even) {
+			&:nth-child(odd) {
 				.views-fieldset {
 					background-color:#f6f5f3;
 				}
+			}
+			&:nth-child(even) {
+				.views-fieldset {
+					background-color:#fafaf9;
+				}
+			}
+		}
+	}
+	@include breakpoint($tablet-small-max) {
+		.views-row {
+			margin-bottom:$horiz-gutter/2;
+			.views-fieldset {
+				background-color:#f6f5f3 !important;
 			}
 		}
 		.views-field-field-service-thumb {

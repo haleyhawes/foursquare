@@ -71,6 +71,9 @@
 				margin:0;
 				color:#fff;
 				padding:$horiz-gutter/1.5 $horiz-gutter;
+				ol {
+					padding:0;
+				}
 				a {
 					color:#fff;
 					text-decoration:underline;

@@ -20,10 +20,15 @@ a {
 img {
 	max-width:100%;
 	height:auto;
-	&.left {
-		width:25%;
-		float:left;
-		margin-right:$horiz-gutter;
+	@include breakpoint($tablet-small-min) {
+		&.left {
+			width:30%;
+			float:left;
+			margin-right:$horiz-gutter;
+			margin-bottom:$horiz-gutter/2;
+		}
+	}
+	@include breakpoint($tablet-small-max) {
 		margin-bottom:$horiz-gutter/2;
 	}
 }

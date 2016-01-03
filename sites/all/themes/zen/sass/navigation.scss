@@ -124,7 +124,7 @@
 
 .breadcrumb {
 	ol {
-		padding:0;
+		padding:0 $horiz-gutter/2;
 		li {
 			list-style-type:none;
 			display:inline-block;
