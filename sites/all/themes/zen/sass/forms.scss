@@ -214,3 +214,17 @@ input[type="submit"] {
 		margin-bottom:$horiz-gutter/2;
 	}
 }
+
+
+/* Search Page Form */
+
+#search-form {
+	label {
+		display:none;
+	}
+	input[type="submit"] {
+		padding:10px 24px;
+		position:relative;
+		top:1px;
+	}
+}

@@ -151,3 +151,26 @@
 		}
 	}
 }
+
+
+
+/* Search Results */
+
+#search-form {
+	border-bottom:1px solid #eee;
+	padding-bottom:$vert-gutter;
+	margin-bottom:$vert-gutter;
+}
+
+.search-results {
+	padding:0;
+	.search-result {
+		margin-bottom:$horiz-gutter;
+		h2 {
+			margin-bottom:$horiz-gutter/2;
+		}
+		.search-snippet-info {
+			padding:0;
+		}
+	}
+}
