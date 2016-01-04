@@ -174,3 +174,32 @@
 		}
 	}
 }
+
+
+
+/* 404 */
+
+.page-node-26 {
+	.page__title {
+		display:none;
+	}
+	.node-26 {
+		text-align:center;
+	}
+	#block-search-form--2 {
+		form {
+			width:100%;
+			max-width:400px;
+			margin:0 auto;
+			input[type="text"] {
+				width:68%;
+			}
+			input[type="submit"] {
+				width:30%;
+				padding:10px 24px;
+				position:relative;
+				top:1px;
+			}
+		}
+	}
+}

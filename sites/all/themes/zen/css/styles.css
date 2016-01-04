@@ -1561,3 +1561,25 @@ input[type="submit"]:hover {
 .search-results .search-result .search-snippet-info {
   padding: 0;
 }
+
+/* 404 */
+.page-node-26 .page__title {
+  display: none;
+}
+.page-node-26 .node-26 {
+  text-align: center;
+}
+.page-node-26 #block-search-form--2 form {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+.page-node-26 #block-search-form--2 form input[type="text"] {
+  width: 68%;
+}
+.page-node-26 #block-search-form--2 form input[type="submit"] {
+  width: 30%;
+  padding: 10px 24px;
+  position: relative;
+  top: 1px;
+}
