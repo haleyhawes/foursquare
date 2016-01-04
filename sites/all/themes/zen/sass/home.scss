@@ -74,8 +74,9 @@
 					background-color:$transparent-navy;
 					width:50%;
 					@include flexbox;
+					-webkit-box-orient:vertical;
 					flex-direction:column;
-					webkit-flex-direction:column;
+					-webkit-flex-direction:column;
 					justify-content:center;
 					-webkit-justify-content:center;
 					padding:$horiz-gutter*2 $horiz-gutter*1.5;

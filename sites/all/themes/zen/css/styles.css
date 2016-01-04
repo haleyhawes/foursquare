@@ -1071,8 +1071,9 @@ input[type="submit"]:hover {
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
+    -webkit-box-orient: vertical;
     flex-direction: column;
-    webkit-flex-direction: column;
+    -webkit-flex-direction: column;
     justify-content: center;
     -webkit-justify-content: center;
     padding: 48px 36px;
