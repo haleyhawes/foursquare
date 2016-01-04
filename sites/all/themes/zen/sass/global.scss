@@ -19,8 +19,14 @@ body {
 a {
 	text-decoration:none;
 	color:$gold;
+	border:none;
+	outline:none;
 	&:hover {
 		color:darken($gold, 10%);
+	}
+	& > img {
+		border:none;
+		outline:none;
 	}
 }
 
