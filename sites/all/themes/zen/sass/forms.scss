@@ -60,6 +60,16 @@ input[type="submit"] {
 	}
 }
 
+.sidebars {
+	#block-webform-client-block-5 {
+		@include breakpoint($tablet-landscape-max $tablet-portrait-min) {
+			input[type="submit"] {
+				font-size:0.8em;
+			}
+		}
+	}
+}
+
 #content {
 	@include clearfix;
 	#block-webform-client-block-5 {
@@ -102,14 +112,28 @@ input[type="submit"] {
 	}
 	@include breakpoint($tablet-portrait-min) {
 		#block-webform-client-block-5 {
-			width:70%;
 			float:left;
 			padding-right:$horiz-gutter;
 		}
 		#block-block-5 {
-			width:30%;
 			float:right;
 			padding-left:$horiz-gutter;
+		}
+	}
+	@include breakpoint($tablet-landscape-min) {
+		#block-webform-client-block-5 {
+			width:70%;
+		}
+		#block-block-5 {
+			width:30%;
+		}
+	}
+	@include breakpoint($tablet-landscape-max $tablet-portrait-min) {
+		#block-webform-client-block-5 {
+			width:67%;
+		}
+		#block-block-5 {
+			width:33%;
 		}
 	}
 	@include breakpoint($tablet-portrait-max) {

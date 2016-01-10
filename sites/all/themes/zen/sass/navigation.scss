@@ -11,8 +11,13 @@
 #logo {
 	display:block;
 	float:left;
-	max-width:200px;
 	padding-bottom:6px;
+	@include breakpoint($phone-min) {
+		max-width:200px;
+	}
+	@include breakpoint($phone-max) {
+		max-width:180px;
+	}
 }
 
 #block-block-1,
@@ -55,20 +60,19 @@
 			padding:$horiz-gutter/3;
 			padding-right:24px;
 		}
-		.form-actions {
+		.form-submit {
 			position:absolute;
 			top:0;
 			right:0;
-			input {
-				border:none;
-				outline:none;
-				background:url('../images/search.png') no-repeat center;
-				filter:none !important;
-				background-size:12px auto;
-				width:26px;
-				text-indent:-9999px;
-				padding:15px 0;
-			}
+			border:none;
+			outline:none;
+			background:url('../images/search.png') no-repeat center;
+			filter:none !important;
+			background-size:12px auto;
+			width:26px;
+			text-indent:-9999px;
+			padding:0;
+			height:100%;
 		}
 	}
 }
@@ -159,11 +163,11 @@
 			.form-text {
 				width:130px;
 			}
-			.form-actions {
-				input {
-					height:26px;
-				}
-			}
+			// .form-actions {
+			// 	input {
+			// 		height:26px;
+			// 	}
+			// }
 		}
 	}
 	#block-system-main-menu {
@@ -223,11 +227,11 @@
 			.form-text {
 				width:100%;
 			}
-			.form-actions {
-				input {
-					height:30px;
-				}
-			}
+			// .form-actions {
+			// 	input {
+			// 		height:32px;
+			// 	}
+			// }
 		}
 	}
 	#block-block-1 {

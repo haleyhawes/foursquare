@@ -333,6 +333,7 @@ footer #block-block-4 {
 }
 #content-bottom #block-views-team-block .views-row .field-name-field-team-image img {
   display: block;
+  margin-bottom: 0 !important;
 }
 #content-bottom #block-views-team-block .views-row .node {
   position: relative;
@@ -363,12 +364,10 @@ footer #block-block-4 {
 }
 @media (min-width: 48em) {
   #content-bottom #block-views-team-block {
-    width: 70%;
     float: left;
     padding-right: 24px;
   }
   #content-bottom #block-webform-client-block-5 {
-    width: 30%;
     float: right;
     padding-left: 24px;
     margin-top: 80px;
@@ -383,6 +382,25 @@ footer #block-block-4 {
   #content-bottom #block-views-team-block .views-row {
     width: 50%;
     float: left;
+  }
+}
+@media (min-width: 64em) {
+  #content-bottom #block-views-team-block {
+    width: 70%;
+  }
+  #content-bottom #block-webform-client-block-5 {
+    width: 30%;
+  }
+}
+@media (max-width: 63.9375em) and (min-width: 48em) {
+  #content-bottom #block-views-team-block {
+    width: 67%;
+  }
+  #content-bottom #block-webform-client-block-5 {
+    width: 33%;
+  }
+  #content-bottom #block-webform-client-block-5 input[type="submit"] {
+    font-size: 0.8em;
   }
 }
 
@@ -404,6 +422,22 @@ footer #block-block-4 {
   font-weight: 700;
 }
 
+@media (min-width: 64em) {
+  .sidebar-second #content {
+    width: 70%;
+  }
+  .sidebar-second .sidebars {
+    width: 30%;
+  }
+}
+@media (max-width: 63.9375em) and (min-width: 48em) {
+  .sidebar-second #content {
+    width: 67%;
+  }
+  .sidebar-second .sidebars {
+    width: 33%;
+  }
+}
 @media (min-width: 48em) {
   .sidebar-second #main {
     display: -webkit-box;
@@ -413,12 +447,10 @@ footer #block-block-4 {
     display: flex;
   }
   .sidebar-second #content {
-    width: 70%;
     float: left;
     padding-right: 24px;
   }
   .sidebar-second .sidebars {
-    width: 30%;
     float: right;
     padding-left: 24px;
     border-left: 1px solid #eee;
@@ -447,8 +479,17 @@ footer #block-block-4 {
 #logo {
   display: block;
   float: left;
-  max-width: 200px;
   padding-bottom: 6px;
+}
+@media (min-width: 30em) {
+  #logo {
+    max-width: 200px;
+  }
+}
+@media (max-width: 29.9375em) {
+  #logo {
+    max-width: 180px;
+  }
 }
 
 #block-block-1 p,
@@ -489,12 +530,10 @@ footer #block-block-4 {
   padding: 8px;
   padding-right: 24px;
 }
-#block-search-form form .form-actions {
+#block-search-form form .form-submit {
   position: absolute;
   top: 0;
   right: 0;
-}
-#block-search-form form .form-actions input {
   border: none;
   outline: none;
   background: url("../images/search.png") no-repeat center;
@@ -502,7 +541,8 @@ footer #block-block-4 {
   background-size: 12px auto;
   width: 26px;
   text-indent: -9999px;
-  padding: 15px 0;
+  padding: 0;
+  height: 100%;
 }
 
 #block-system-main-menu {
@@ -588,9 +628,6 @@ footer #block-block-4 {
   #block-search-form form .form-text {
     width: 130px;
   }
-  #block-search-form form .form-actions input {
-    height: 26px;
-  }
 
   #block-system-main-menu ul.menu {
     margin-right: -16px;
@@ -662,9 +699,6 @@ footer #block-block-4 {
   }
   #block-search-form form .form-text {
     width: 100%;
-  }
-  #block-search-form form .form-actions input {
-    height: 30px;
   }
 
   #block-block-1 {
@@ -818,6 +852,12 @@ input[type="submit"]:hover {
   height: 84px;
 }
 
+@media (max-width: 63.9375em) and (min-width: 48em) {
+  .sidebars #block-webform-client-block-5 input[type="submit"] {
+    font-size: 0.8em;
+  }
+}
+
 #content:after {
   content: "";
   display: block;
@@ -878,14 +918,28 @@ input[type="submit"]:hover {
 }
 @media (min-width: 48em) {
   #content #block-webform-client-block-5 {
-    width: 70%;
     float: left;
     padding-right: 24px;
   }
   #content #block-block-5 {
-    width: 30%;
     float: right;
     padding-left: 24px;
+  }
+}
+@media (min-width: 64em) {
+  #content #block-webform-client-block-5 {
+    width: 70%;
+  }
+  #content #block-block-5 {
+    width: 30%;
+  }
+}
+@media (max-width: 63.9375em) and (min-width: 48em) {
+  #content #block-webform-client-block-5 {
+    width: 67%;
+  }
+  #content #block-block-5 {
+    width: 33%;
   }
 }
 @media (max-width: 47.9375em) {
@@ -1139,6 +1193,13 @@ input[type="submit"]:hover {
   text-align: center;
 }
 @media (min-width: 51.875em) {
+  #block-views-services-block .view-content {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+  }
   #block-views-services-block .views-row {
     width: 25%;
     float: left;
@@ -1307,10 +1368,10 @@ input[type="submit"]:hover {
   }
 }
 @media (min-width: 37.5em) {
-  #block-views-services-block .views-row:nth-child(odd) .views-fieldset {
+  #block-views-services-block .views-row:nth-child(odd) {
     background-color: #f6f5f3;
   }
-  #block-views-services-block .views-row:nth-child(even) .views-fieldset {
+  #block-views-services-block .views-row:nth-child(even) {
     background-color: #fafaf9;
   }
 }
@@ -1475,6 +1536,11 @@ input[type="submit"]:hover {
     padding-left: 24px;
   }
 }
+@media (max-width: 63.9375em) {
+  #content #block-views-all-article-tags-block {
+    margin-bottom: 48px;
+  }
+}
 
 .sidebars #block-views-all-article-tags-block .view-footer {
   display: none;
@@ -1580,6 +1646,28 @@ input[type="submit"]:hover {
 }
 
 /* Search Results */
+#content #search-form {
+  position: relative;
+  max-width: 400px;
+}
+#content #search-form .form-text {
+  padding-right: 24px;
+  width: 100%;
+}
+#content #search-form .form-submit {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: none;
+  outline: none;
+  background: url("../images/search.png") no-repeat center;
+  filter: none !important;
+  background-size: 12px auto;
+  width: 36px;
+  text-indent: -9999px;
+  padding: 11px 0;
+}
+
 #search-form {
   border-bottom: 1px solid #eee;
   padding-bottom: 24px;
@@ -1622,21 +1710,27 @@ input[type="submit"]:hover {
 }
 
 /* Team Members */
+@media (min-width: 48em) {
+  .node-type-team-member .field-name-field-team-image {
+    width: 33%;
+    float: left;
+    padding-right: 12px;
+  }
+  .node-type-team-member .team-contact-info {
+    width: 67%;
+    float: left;
+    padding-left: 12px;
+    padding-top: 8px;
+  }
+}
 .node-type-team-member .field-name-field-team-image {
-  width: 33%;
-  float: left;
-  padding-right: 12px;
   margin-bottom: 24px;
 }
 .node-type-team-member .field-name-field-team-image img {
   display: block;
 }
 .node-type-team-member .team-contact-info {
-  width: 67%;
-  float: left;
-  padding-left: 12px;
   margin-bottom: 24px;
-  padding-top: 8px;
 }
 .node-type-team-member .field-name-field-team-bio {
   clear: left;

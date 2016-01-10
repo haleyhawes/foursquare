@@ -193,6 +193,7 @@ footer {
 			.field-name-field-team-image {
 				img {
 					display:block;
+					margin-bottom:0 !important;
 				}
 			}
 			.node {
@@ -226,12 +227,10 @@ footer {
 	}
 	@include breakpoint($tablet-portrait-min) {
 		#block-views-team-block {
-			width:70%;
 			float:left;
 			padding-right:$horiz-gutter;
 		}
 		#block-webform-client-block-5 {
-			width:30%;
 			float:right;
 			padding-left:$horiz-gutter;
 			margin-top:80px;
@@ -247,6 +246,25 @@ footer {
 			.views-row {
 				width:50%;
 				float:left;
+			}
+		}
+	}
+	@include breakpoint($tablet-landscape-min) {
+		#block-views-team-block {
+			width:70%;
+		}
+		#block-webform-client-block-5 {
+			width:30%;
+		}
+	}
+	@include breakpoint($tablet-landscape-max $tablet-portrait-min) {
+		#block-views-team-block {
+			width:67%;
+		}
+		#block-webform-client-block-5 {
+			width:33%;
+			input[type="submit"] {
+				font-size:0.8em;
 			}
 		}
 	}
@@ -283,17 +301,31 @@ footer {
 // Layouts
 
 .sidebar-second {
+	@include breakpoint($tablet-landscape-min) {
+		#content {
+			width:70%;
+		}
+		.sidebars {
+			width:30%;
+		}
+	}
+	@include breakpoint($tablet-landscape-max $tablet-portrait-min) {
+		#content {
+			width:67%;
+		}
+		.sidebars {
+			width:33%;
+		}
+	}
 	@include breakpoint($tablet-portrait-min) {
 		#main {
 		@include flexbox;
 		}
 		#content {
-			width:70%;
 			float:left;
 			padding-right:$horiz-gutter;
 		}
 		.sidebars {
-			width:30%;
 			float:right;
 			padding-left:$horiz-gutter;
 			border-left:1px solid #eee;

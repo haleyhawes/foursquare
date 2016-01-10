@@ -40,6 +40,11 @@
 			padding-left:$horiz-gutter;
 		}
 	}
+	@include breakpoint($tablet-landscape-max) {
+		#block-views-all-article-tags-block {
+			margin-bottom:$horiz-gutter*2;
+		}
+	}
 }
 
 .sidebars {
@@ -157,6 +162,30 @@
 
 /* Search Results */
 
+#content {
+	#search-form {
+		position:relative;
+		max-width:400px;
+		.form-text {
+			padding-right:24px;
+			width:100%;
+		}
+		.form-submit {
+			position:absolute;
+			top:0;
+			right:0;
+			border:none;
+			outline:none;
+			background:url('../images/search.png') no-repeat center;
+			filter:none !important;
+			background-size:12px auto;
+			width:36px;
+			text-indent:-9999px;
+			padding:11px 0;
+		}
+	}
+}
+
 #search-form {
 	border-bottom:1px solid #eee;
 	padding-bottom:$vert-gutter;
@@ -210,21 +239,27 @@
 /* Team Members */
 
 .node-type-team-member {
+	@include breakpoint($tablet-portrait-min) {
+		.field-name-field-team-image {
+			width:33%;
+			float:left;
+			padding-right:$horiz-gutter/2;
+		}
+		.team-contact-info {
+			width:67%;
+			float:left;
+			padding-left:$horiz-gutter/2;
+			padding-top:$horiz-gutter/3;
+		}
+	}
 	.field-name-field-team-image {
-		width:33%;
-		float:left;
-		padding-right:$horiz-gutter/2;
 		margin-bottom:$horiz-gutter;
 		img {
 			display:block;
 		}
 	}
 	.team-contact-info {
-		width:67%;
-		float:left;
-		padding-left:$horiz-gutter/2;
 		margin-bottom:$horiz-gutter;
-		padding-top:$horiz-gutter/3;
 	}
 	.field-name-field-team-bio {
 		clear:left;
