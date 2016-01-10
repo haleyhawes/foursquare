@@ -7,6 +7,8 @@ textarea {
 	padding:$horiz-gutter/2;
 	max-width:100%;
 	font-family:$body-font;
+	color:#777;
+	font-size:12px;
 	&:focus {
 		outline:none;
 		border:1px solid $blue;
@@ -16,6 +18,7 @@ textarea {
 a.button,
 input[type="submit"] {
 	@include linear-gradient(#e9c97e, #c7a656);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e9c97e', endColorstr='#c7a656',GradientType=0 ); /* IE6-9 */
 	border:none;
 	outline:none;
 	border-radius:4px;
@@ -167,12 +170,13 @@ input[type="submit"] {
     border:none;
     outline:none;
     background:transparent;
-    padding:11px 50px 13px 12px;
+    padding:10px 50px 12px 12px;
     border-radius:0;
     z-index:25;
     width:100%;
     border-radius:3px;
-    color:#aaa;
+    color:#777;
+    font-size:12px;
   }
   select:focus {
     border:1px solid $blue;

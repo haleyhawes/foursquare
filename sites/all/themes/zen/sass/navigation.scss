@@ -51,7 +51,7 @@
 #block-search-form {
 	form {
 		position:relative;
-		input[type="text"] {
+		.form-text {
 			padding:$horiz-gutter/3;
 			padding-right:24px;
 		}
@@ -63,6 +63,7 @@
 				border:none;
 				outline:none;
 				background:url('../images/search.png') no-repeat center;
+				filter:none !important;
 				background-size:12px auto;
 				width:26px;
 				text-indent:-9999px;
@@ -153,8 +154,9 @@
 		float:right;
 	}
 	#block-search-form {
+		width:130px;
 		form {
-			input[type="text"] {
+			.form-text {
 				width:130px;
 			}
 			.form-actions {
@@ -218,7 +220,7 @@
 	#block-search-form {
 		padding:$horiz-gutter/2;
 		form {
-			input[type="text"] {
+			.form-text {
 				width:100%;
 			}
 			.form-actions {

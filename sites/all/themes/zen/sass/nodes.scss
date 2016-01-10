@@ -111,6 +111,7 @@
 	@include breakpoint($tablet-small-min) {
 		.views-row {
 			@include flexbox;
+			@include clearfix;
 			.views-field-field-service-thumb {
 				width:33.33%;
 				float:left;
@@ -202,4 +203,55 @@
 			}
 		}
 	}
+}
+
+
+
+/* Team Members */
+
+.node-type-team-member {
+	.field-name-field-team-image {
+		width:33%;
+		float:left;
+		padding-right:$horiz-gutter/2;
+		margin-bottom:$horiz-gutter;
+		img {
+			display:block;
+		}
+	}
+	.team-contact-info {
+		width:67%;
+		float:left;
+		padding-left:$horiz-gutter/2;
+		margin-bottom:$horiz-gutter;
+		padding-top:$horiz-gutter/3;
+	}
+	.field-name-field-team-bio {
+		clear:left;
+		p:first-child {
+			margin-top:0;
+		}
+	}
+	.page__title {
+		margin-bottom:0;
+	}
+	.field-name-field-team-title {
+		margin-bottom:$horiz-gutter;
+		font-family:$judson;
+		font-style:italic;
+		color:#777;
+	}
+}
+
+
+/* Contact Page */
+
+.body-link {
+	font-family:$body-font;
+	font-size:14px;
+	font-style:italic;
+}
+
+.judson-link {
+	color:$navy;
 }

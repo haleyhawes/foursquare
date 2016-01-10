@@ -10,6 +10,12 @@
 
 ?>
 
+<?php if ($page): ?>
+  <?php if ($title): ?>
+    <h1 class="page__title title" id="page-title"><?php print $title; ?></h1>
+  <?php endif; ?>
+<?php endif; ?>
+
 <article class="node-<?php print $node->nid; ?> <?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 
   <?php if ($title_prefix || $title_suffix || $display_submitted || $unpublished || !$page && $title): ?>

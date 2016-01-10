@@ -71,6 +71,7 @@
 				padding-left:$horiz-gutter/2;
 				padding-right:$horiz-gutter/2;
 				.views-fieldset {
+					background-color:$navy;
 					background-color:$transparent-navy;
 					width:50%;
 					@include flexbox;
@@ -132,13 +133,18 @@
 		.views-row {
 			width:25%;
 			float:left;
+			.views-field-title {
+				background-color:$navy;
+			}
 			&:nth-child(4n+1) {
 				.views-field-title {
+					background-color:$blue;
 					background-color:$transparent-blue;
 				}
 				.views-field-nothing {
 					.button {
 						@include linear-gradient(#1095dd, #0273b0);
+						filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1095dd', endColorstr='#0273b0',GradientType=0 ); /* IE6-9 */
 						&:hover {
 							@include linear-gradient(darken(#1095dd,5%), darken(#0273b0,5%));
 						}
@@ -147,16 +153,19 @@
 			}
 			&:nth-child(4n+2) {
 				.views-field-title {
+					background-color:$gold;
 					background-color:$transparent-gold;
 				}
 			}
 			&:nth-child(4n+3) {
 				.views-field-title {
+					background-color:$green;
 					background-color:$transparent-green;
 				}
 				.views-field-nothing {
 					.button {
 						@include linear-gradient(#648151, #4f6044);
+						filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#648151', endColorstr='#4f6044',GradientType=0 ); /* IE6-9 */
 						&:hover {
 							@include linear-gradient(darken(#648151,5%), darken(#4f6044,5%));
 						}
@@ -165,11 +174,13 @@
 			}
 			&:nth-child(4n+4) {
 				.views-field-title {
+					background-color:$navy;
 					background-color:$transparent-navy;
 				}
 				.views-field-nothing {
 					.button {
 						@include linear-gradient(#1f6f99, #095278);
+						filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f6f99', endColorstr='#095278',GradientType=0 ); /* IE6-9 */
 						&:hover {
 							@include linear-gradient(darken(#1f6f99,5%), darken(#095278,5%));
 						}
@@ -247,6 +258,12 @@
 
 
 /* About Us */
+
+.front {
+	.page__title {
+		display:none;
+	}
+}
 
 .node-25 {
 	@include clearfix;

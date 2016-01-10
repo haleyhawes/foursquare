@@ -46,6 +46,8 @@ img {
 	}
 }
 
+@media \0screen {img { width: auto }} /* Prevent height distortion in IE8. */
+
 .container {
 	@extend %container;
 }
