@@ -42,11 +42,13 @@
     <div class="team-contact-info">
       <h1 class="page__title title" id="page-title"><?php print $title; ?></h1>
       <?php print render($content['field_team_title']); ?>
-      <?php print render($content['field_team_phone']); ?>
-      <?php print render($content['field_team_email']); ?>
+      <div><b>Phone:</b> <?php print render($content['field_team_phone'][0]['#markup']); ?></div>
+      <div><b>Email:</b> <a href="mailto:<?php print render($content['field_team_email'][0]['#markup']); ?>"><?php print render($content['field_team_email'][0]['#markup']); ?></a></div>
     </div>
     <?php
       // We hide the comments and links now so that we can render them later.
+      hide($content['field_team_phone']);
+      hide($content['field_team_email']);
       hide($content['comments']);
       hide($content['links']);
       print render($content);
