@@ -261,6 +261,25 @@
 	.team-contact-info {
 		margin-bottom:$horiz-gutter;
 	}
+	.linkedin-connect {
+		clear:left;
+		display:block;
+		a {
+			background-color:$blue;
+			color:#fff;
+			display:inline-block;
+			&:hover {
+				background-color:darken($blue,5%);
+			}
+			.fa,
+			.connect-text {
+				padding:10px;
+			}
+			.connect-text {
+				border-left:1px solid rgba(255,255,255,0.2);
+			}
+		}
+	}
 	.field-name-field-team-bio {
 		clear:left;
 		p:first-child {

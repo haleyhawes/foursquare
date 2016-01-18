@@ -49,10 +49,12 @@
       // We hide the comments and links now so that we can render them later.
       hide($content['field_team_phone']);
       hide($content['field_team_email']);
+      hide($content['field_team_linkedin']);
       hide($content['comments']);
       hide($content['links']);
       print render($content);
     ?>
+    <div class="linkedin-connect"><a href="<?php print $field_team_linkedin[0]['url']; ?>"><span class="fa fa-linkedin"></span><span class="connect-text">Connect on LinkedIn</span></a></div>
   <?php endif; ?>
 
 

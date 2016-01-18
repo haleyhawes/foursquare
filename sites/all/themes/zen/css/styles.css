@@ -1732,6 +1732,25 @@ input[type="submit"]:hover {
 .node-type-team-member .team-contact-info {
   margin-bottom: 24px;
 }
+.node-type-team-member .linkedin-connect {
+  clear: left;
+  display: block;
+}
+.node-type-team-member .linkedin-connect a {
+  background-color: #0082c8;
+  color: #fff;
+  display: inline-block;
+}
+.node-type-team-member .linkedin-connect a:hover {
+  background-color: #0071af;
+}
+.node-type-team-member .linkedin-connect a .fa,
+.node-type-team-member .linkedin-connect a .connect-text {
+  padding: 10px;
+}
+.node-type-team-member .linkedin-connect a .connect-text {
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+}
 .node-type-team-member .field-name-field-team-bio {
   clear: left;
 }
