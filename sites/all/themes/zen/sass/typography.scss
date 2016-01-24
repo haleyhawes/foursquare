@@ -80,3 +80,17 @@ img.right {
 		}
 	}
 }
+
+li {
+	margin-bottom:$vert-gutter/4;
+}
+
+
+table {
+	width:100%;
+	border-collapse:collapse;
+	border:none;
+	td {
+		padding:$horiz-gutter/3;
+	}
+}
