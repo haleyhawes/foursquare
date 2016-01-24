@@ -17,7 +17,7 @@
   <article class="node-<?php print $node->nid; ?> <?php print $classes; ?> clearfix"<?php print $attributes; ?>>
     <?php if ($display_submitted): ?>
       <p class="submitted">
-        Posted on <?php print $formatted_date ?> by <?php print render($content['field_article_author'][0]['#markup']); ?>
+        Posted on <?php print $formatted_date ?> <?php if (!empty($field_article_author)): ?>by <?php print render($content['field_article_author'][0]['#markup']); ?><?php endif; ?>
       </p>
     <?php endif; ?>
     <div class="article-image">

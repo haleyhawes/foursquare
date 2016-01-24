@@ -1593,8 +1593,8 @@ input[type="submit"]:hover {
   font-family: "Judson", georgia, serif;
   font-size: 1.2em;
   text-align: center;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
   padding: 12px 0;
   margin: 24px 0 36px;
 }
@@ -1602,7 +1602,7 @@ input[type="submit"]:hover {
   color: #aaa;
   font-size: 0.9em;
   font-style: italic;
-  border-top: 1px solid #ddd;
+  border-top: 1px solid #eee;
   padding-top: 12px;
   margin: 36px 0;
 }
