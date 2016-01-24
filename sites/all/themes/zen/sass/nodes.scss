@@ -78,13 +78,50 @@
 		font-size:0.9em;
 		margin-bottom:$horiz-gutter;
 	}
-	.field-name-field-image {
-		@include breakpoint($tablet-small-min) {
-			width:25%;
-			float:left;
-			margin-right:$horiz-gutter/2;
-			margin-bottom:$horiz-gutter/2;
+	.article-image {
+		position:relative;
+		.field-name-field-image {
+			img {
+				width:100%;
+				height:auto;
+			}
 		}
+		.field-name-field-image-source {
+			@include transition(opacity,0.3s,ease);
+			position:absolute;
+			top:10px;
+			right:10px;
+			color:#fff;
+			font-size:0.9em;
+			text-shadow:1px 1px 1px rgba(0,0,0,0.75);
+			opacity:0.8;
+		}
+		&:hover {
+			.field-name-field-image-source {
+				opacity:1;
+			}
+		}
+	}
+	.field-name-field-article-intro {
+		font-family:$judson;
+		font-size:1.2em;
+		text-align:center;
+		border-top:1px solid #ddd;
+		border-bottom:1px solid #ddd;
+		padding:$horiz-gutter/2 0;
+		margin:$vert-gutter 0 $vert-gutter*1.5;
+	}
+	.field-name-field-article-disclaimers {
+		color:#aaa;
+		font-size:0.9em;
+		font-style:italic;
+		border-top:1px solid #ddd;
+		padding-top:$horiz-gutter/2;
+		margin:$vert-gutter*1.5 0;
+	}
+	.field-name-field-article-citations {
+		font-size:0.9em;
+		color:#aaa;
 	}
 }
 
